@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290556321542E62C009AA62C /* Crystal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 290556311542E62C009AA62C /* Crystal.ttf */; };
 		2938C0A41542DB810027808D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2938C0A31542DB810027808D /* UIKit.framework */; };
 		2938C0A61542DB810027808D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2938C0A51542DB810027808D /* Foundation.framework */; };
 		2938C0A81542DB810027808D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2938C0A71542DB810027808D /* CoreGraphics.framework */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		290556311542E62C009AA62C /* Crystal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Crystal.ttf; sourceTree = "<group>"; };
 		2938C09F1542DB810027808D /* SmartChrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartChrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2938C0A31542DB810027808D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2938C0A51542DB810027808D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,7 +46,7 @@
 		2938C0B11542DB810027808D /* SmartChrono-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartChrono-Prefix.pch"; sourceTree = "<group>"; };
 		2938C0B21542DB810027808D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2938C0B31542DB810027808D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2938C0B51542DB810027808D /* StopWatchViewController.h */ = {isa = PBXFileReference; path = StopWatchViewController.h; sourceTree = "<group>"; };
+		2938C0B51542DB810027808D /* StopWatchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopWatchViewController.h; sourceTree = "<group>"; };
 		2938C0B61542DB810027808D /* StopWatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StopWatchViewController.m; sourceTree = "<group>"; };
 		2938C0B91542DB810027808D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StopWatchViewController_iPhone.xib; sourceTree = "<group>"; };
 		2938C0BC1542DB810027808D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StopWatchViewController_iPad.xib; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				2938C0B61542DB810027808D /* StopWatchViewController.m */,
 				2938C0B81542DB810027808D /* StopWatchViewController_iPhone.xib */,
 				2938C0BB1542DB810027808D /* StopWatchViewController_iPad.xib */,
+				290556311542E62C009AA62C /* Crystal.ttf */,
 				2938C0AA1542DB810027808D /* Supporting Files */,
 			);
 			path = SmartChrono;
@@ -228,6 +231,7 @@
 				2938C0AE1542DB810027808D /* InfoPlist.strings in Resources */,
 				2938C0BA1542DB810027808D /* StopWatchViewController_iPhone.xib in Resources */,
 				2938C0BD1542DB810027808D /* StopWatchViewController_iPad.xib in Resources */,
+				290556321542E62C009AA62C /* Crystal.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

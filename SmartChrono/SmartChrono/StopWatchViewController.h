@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StopWatchViewController : UIViewController
+@interface StopWatchViewController : UIViewController {
+    IBOutlet UILabel *chronoLabel;
+}
+
+@property(nonatomic, retain) IBOutlet UILabel *chronoLabel;
+- (IBAction)onStartPressed:(UIButton *)sender;
+- (IBAction)onStopPressed:(UIButton *)sender;
 
 @end

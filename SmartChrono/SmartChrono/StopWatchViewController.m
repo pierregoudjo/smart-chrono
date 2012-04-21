@@ -9,21 +9,35 @@
 #import "StopWatchViewController.h"
 
 @interface StopWatchViewController ()
-
+- (void)releaseOutlets;
 @end
 
 @implementation StopWatchViewController
 
+@synthesize chronoLabel;
+
+- (void)dealloc
+{
+    [self releaseOutlets];
+    [super dealloc];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [chronoLabel setFont: [UIFont fontWithName:@"Crystal" size:70]]; 
+}
+
+- (void)releaseOutlets
+{
+    self.chronoLabel = nil;
 }
 
 - (void)viewDidUnload
 {
+    [self releaseOutlets];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -35,4 +49,9 @@
     }
 }
 
+- (IBAction)onStartPressed:(UIButton *)sender {
+}
+
+- (IBAction)onStopPressed:(UIButton *)sender {
+}
 @end
