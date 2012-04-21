@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2938C0A41542DB810027808D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2938C0A31542DB810027808D /* UIKit.framework */; };
+		2938C0A61542DB810027808D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2938C0A51542DB810027808D /* Foundation.framework */; };
+		2938C0A81542DB810027808D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2938C0A71542DB810027808D /* CoreGraphics.framework */; };
+		2938C0AE1542DB810027808D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2938C0AC1542DB810027808D /* InfoPlist.strings */; };
+		2938C0B01542DB810027808D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2938C0AF1542DB810027808D /* main.m */; };
+		2938C0B41542DB810027808D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2938C0B31542DB810027808D /* AppDelegate.m */; };
+		2938C0B71542DB810027808D /* StopWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2938C0B61542DB810027808D /* StopWatchViewController.m */; };
+		2938C0BA1542DB810027808D /* StopWatchViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2938C0B81542DB810027808D /* StopWatchViewController_iPhone.xib */; };
+		2938C0BD1542DB810027808D /* StopWatchViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2938C0BB1542DB810027808D /* StopWatchViewController_iPad.xib */; };
+		2938C0C51542DB810027808D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2938C0C41542DB810027808D /* SenTestingKit.framework */; };
+		2938C0C61542DB810027808D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2938C0A31542DB810027808D /* UIKit.framework */; };
+		2938C0C71542DB810027808D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2938C0A51542DB810027808D /* Foundation.framework */; };
+		2938C0CF1542DB820027808D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2938C0CD1542DB820027808D /* InfoPlist.strings */; };
+		2938C0D21542DB820027808D /* SmartChronoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2938C0D11542DB820027808D /* SmartChronoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2938C0C81542DB810027808D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2938C0961542DB810027808D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2938C09E1542DB810027808D;
+			remoteInfo = SmartChrono;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2938C09F1542DB810027808D /* SmartChrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartChrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2938C0A31542DB810027808D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2938C0A51542DB810027808D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2938C0A71542DB810027808D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2938C0AB1542DB810027808D /* SmartChrono-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartChrono-Info.plist"; sourceTree = "<group>"; };
+		2938C0AD1542DB810027808D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2938C0AF1542DB810027808D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2938C0B11542DB810027808D /* SmartChrono-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartChrono-Prefix.pch"; sourceTree = "<group>"; };
+		2938C0B21542DB810027808D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2938C0B31542DB810027808D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2938C0B51542DB810027808D /* StopWatchViewController.h */ = {isa = PBXFileReference; path = StopWatchViewController.h; sourceTree = "<group>"; };
+		2938C0B61542DB810027808D /* StopWatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StopWatchViewController.m; sourceTree = "<group>"; };
+		2938C0B91542DB810027808D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StopWatchViewController_iPhone.xib; sourceTree = "<group>"; };
+		2938C0BC1542DB810027808D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StopWatchViewController_iPad.xib; sourceTree = "<group>"; };
+		2938C0C31542DB810027808D /* SmartChronoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartChronoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2938C0C41542DB810027808D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2938C0CC1542DB820027808D /* SmartChronoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartChronoTests-Info.plist"; sourceTree = "<group>"; };
+		2938C0CE1542DB820027808D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2938C0D01542DB820027808D /* SmartChronoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartChronoTests.h; sourceTree = "<group>"; };
+		2938C0D11542DB820027808D /* SmartChronoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartChronoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2938C09C1542DB810027808D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2938C0A41542DB810027808D /* UIKit.framework in Frameworks */,
+				2938C0A61542DB810027808D /* Foundation.framework in Frameworks */,
+				2938C0A81542DB810027808D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2938C0BF1542DB810027808D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2938C0C51542DB810027808D /* SenTestingKit.framework in Frameworks */,
+				2938C0C61542DB810027808D /* UIKit.framework in Frameworks */,
+				2938C0C71542DB810027808D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2938C0941542DB810027808D = {
+			isa = PBXGroup;
+			children = (
+				2938C0A91542DB810027808D /* SmartChrono */,
+				2938C0CA1542DB810027808D /* SmartChronoTests */,
+				2938C0A21542DB810027808D /* Frameworks */,
+				2938C0A01542DB810027808D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2938C0A01542DB810027808D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2938C09F1542DB810027808D /* SmartChrono.app */,
+				2938C0C31542DB810027808D /* SmartChronoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2938C0A21542DB810027808D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2938C0A31542DB810027808D /* UIKit.framework */,
+				2938C0A51542DB810027808D /* Foundation.framework */,
+				2938C0A71542DB810027808D /* CoreGraphics.framework */,
+				2938C0C41542DB810027808D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2938C0A91542DB810027808D /* SmartChrono */ = {
+			isa = PBXGroup;
+			children = (
+				2938C0B21542DB810027808D /* AppDelegate.h */,
+				2938C0B31542DB810027808D /* AppDelegate.m */,
+				2938C0B51542DB810027808D /* StopWatchViewController.h */,
+				2938C0B61542DB810027808D /* StopWatchViewController.m */,
+				2938C0B81542DB810027808D /* StopWatchViewController_iPhone.xib */,
+				2938C0BB1542DB810027808D /* StopWatchViewController_iPad.xib */,
+				2938C0AA1542DB810027808D /* Supporting Files */,
+			);
+			path = SmartChrono;
+			sourceTree = "<group>";
+		};
+		2938C0AA1542DB810027808D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2938C0AB1542DB810027808D /* SmartChrono-Info.plist */,
+				2938C0AC1542DB810027808D /* InfoPlist.strings */,
+				2938C0AF1542DB810027808D /* main.m */,
+				2938C0B11542DB810027808D /* SmartChrono-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2938C0CA1542DB810027808D /* SmartChronoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2938C0D01542DB820027808D /* SmartChronoTests.h */,
+				2938C0D11542DB820027808D /* SmartChronoTests.m */,
+				2938C0CB1542DB820027808D /* Supporting Files */,
+			);
+			path = SmartChronoTests;
+			sourceTree = "<group>";
+		};
+		2938C0CB1542DB820027808D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2938C0CC1542DB820027808D /* SmartChronoTests-Info.plist */,
+				2938C0CD1542DB820027808D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2938C09E1542DB810027808D /* SmartChrono */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2938C0D51542DB820027808D /* Build configuration list for PBXNativeTarget "SmartChrono" */;
+			buildPhases = (
+				2938C09B1542DB810027808D /* Sources */,
+				2938C09C1542DB810027808D /* Frameworks */,
+				2938C09D1542DB810027808D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartChrono;
+			productName = SmartChrono;
+			productReference = 2938C09F1542DB810027808D /* SmartChrono.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2938C0C21542DB810027808D /* SmartChronoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2938C0D81542DB820027808D /* Build configuration list for PBXNativeTarget "SmartChronoTests" */;
+			buildPhases = (
+				2938C0BE1542DB810027808D /* Sources */,
+				2938C0BF1542DB810027808D /* Frameworks */,
+				2938C0C01542DB810027808D /* Resources */,
+				2938C0C11542DB810027808D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2938C0C91542DB810027808D /* PBXTargetDependency */,
+			);
+			name = SmartChronoTests;
+			productName = SmartChronoTests;
+			productReference = 2938C0C31542DB810027808D /* SmartChronoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2938C0961542DB810027808D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = UNS;
+			};
+			buildConfigurationList = 2938C0991542DB810027808D /* Build configuration list for PBXProject "SmartChrono" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2938C0941542DB810027808D;
+			productRefGroup = 2938C0A01542DB810027808D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2938C09E1542DB810027808D /* SmartChrono */,
+				2938C0C21542DB810027808D /* SmartChronoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2938C09D1542DB810027808D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2938C0AE1542DB810027808D /* InfoPlist.strings in Resources */,
+				2938C0BA1542DB810027808D /* StopWatchViewController_iPhone.xib in Resources */,
+				2938C0BD1542DB810027808D /* StopWatchViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2938C0C01542DB810027808D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2938C0CF1542DB820027808D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2938C0C11542DB810027808D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2938C09B1542DB810027808D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2938C0B01542DB810027808D /* main.m in Sources */,
+				2938C0B41542DB810027808D /* AppDelegate.m in Sources */,
+				2938C0B71542DB810027808D /* StopWatchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2938C0BE1542DB810027808D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2938C0D21542DB820027808D /* SmartChronoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2938C0C91542DB810027808D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2938C09E1542DB810027808D /* SmartChrono */;
+			targetProxy = 2938C0C81542DB810027808D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2938C0AC1542DB810027808D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2938C0AD1542DB810027808D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2938C0B81542DB810027808D /* StopWatchViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2938C0B91542DB810027808D /* en */,
+			);
+			name = StopWatchViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		2938C0BB1542DB810027808D /* StopWatchViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2938C0BC1542DB810027808D /* en */,
+			);
+			name = StopWatchViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		2938C0CD1542DB820027808D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2938C0CE1542DB820027808D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2938C0D31542DB820027808D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2938C0D41542DB820027808D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2938C0D61542DB820027808D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartChrono/SmartChrono-Prefix.pch";
+				INFOPLIST_FILE = "SmartChrono/SmartChrono-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2938C0D71542DB820027808D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartChrono/SmartChrono-Prefix.pch";
+				INFOPLIST_FILE = "SmartChrono/SmartChrono-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2938C0D91542DB820027808D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmartChrono.app/SmartChrono";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartChrono/SmartChrono-Prefix.pch";
+				INFOPLIST_FILE = "SmartChronoTests/SmartChronoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2938C0DA1542DB820027808D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmartChrono.app/SmartChrono";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartChrono/SmartChrono-Prefix.pch";
+				INFOPLIST_FILE = "SmartChronoTests/SmartChronoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2938C0991542DB810027808D /* Build configuration list for PBXProject "SmartChrono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2938C0D31542DB820027808D /* Debug */,
+				2938C0D41542DB820027808D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2938C0D51542DB820027808D /* Build configuration list for PBXNativeTarget "SmartChrono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2938C0D61542DB820027808D /* Debug */,
+				2938C0D71542DB820027808D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2938C0D81542DB820027808D /* Build configuration list for PBXNativeTarget "SmartChronoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2938C0D91542DB820027808D /* Debug */,
+				2938C0DA1542DB820027808D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2938C0961542DB810027808D /* Project object */;
+}
