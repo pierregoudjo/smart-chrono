@@ -49,9 +49,37 @@
     }
 }
 
-- (IBAction)onStartPressed:(UIButton *)sender {
+//Helper method that update StopWatcher label
+- (void)updateTimer
+{
+    NSDate *currentDate = [NSDate date];
+    NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startDate];
+    NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"HH:mm:ss.SSS"];
+    [dateFormatter setTimeZone: [NSTimeZone timeZoneForSecondsFromGMT:0.0]];
+    NSString *timeString = [dateFormatter stringFromDate:timerDate];
+    chronoLabel.text = timeString;
+    [dateFormatter release];
 }
 
-- (IBAction)onStopPressed:(UIButton *)sender {
+- (IBAction)onStartPressed:(UIButton *)sender
+{
+    startDate = [NSDate date];
+    [startDate retain];
+    
+    chronoTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0 
+                                                   target:self 
+                                                 selector:@selector(updateTimer) 
+                                                 userInfo:nil 
+                                                  repeats:YES];
+    
+    
 }
+
+- (IBAction)onStopPressed:(UIButton *)sender
+{
+    chronoLabel.text = @"STOP PRESSED";
+}
+
 @end

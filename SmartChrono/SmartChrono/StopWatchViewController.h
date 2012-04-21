@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface StopWatchViewController : UIViewController {
+    @private
     IBOutlet UILabel *chronoLabel;
+    NSTimer *chronoTimer;
+    NSDate *startDate;
 }
 
 @property(nonatomic, retain) IBOutlet UILabel *chronoLabel;
