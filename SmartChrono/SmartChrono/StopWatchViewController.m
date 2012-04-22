@@ -25,7 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [chronoLabel setFont: [UIFont fontWithName:@"Crystal" size:70]]; 
+    [chronoLabel setFont: [UIFont fontWithName:@"Crystal" size:55]]; 
 }
 
 - (void)releaseOutlets
