@@ -8,7 +8,9 @@
 
 #import "StopWatchViewController.h"
 
-@interface StopWatchViewController ()
+@interface StopWatchViewController () {
+    BOOL isWorking;
+}
 - (void)releaseOutlets;
 @end
 
@@ -65,15 +67,20 @@
 
 - (IBAction)onStartPressed:(UIButton *)sender
 {
-    startDate = [NSDate date];
-    [startDate retain];
+    if (!isWorking) {
+        startDate = [NSDate date];
+        [startDate retain];
+        isWorking = YES;
+    }
     
-    chronoTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0 
-                                                   target:self 
-                                                 selector:@selector(updateTimer) 
-                                                 userInfo:nil 
-                                                  repeats:YES];    
     
+    if (!chronoTimer) {
+        chronoTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0 
+                                                       target:self 
+                                                     selector:@selector(updateTimer) 
+                                                     userInfo:nil 
+                                                      repeats:YES];
+    }  
 }
 
 - (IBAction)onStopPressed:(UIButton *)sender
@@ -81,6 +88,10 @@
     [chronoTimer invalidate];
     chronoTimer = nil;
     [self updateTimer];
+    [startDate release];
+    startDate = nil;
+    isWorking = NO;
+    
 }
 
 @end
