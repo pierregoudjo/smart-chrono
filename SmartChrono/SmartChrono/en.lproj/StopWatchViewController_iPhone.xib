@@ -55,8 +55,8 @@
 							<bytes key="NSWhite">MQA</bytes>
 						</object>
 						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MAA</bytes>
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC4xOTYwNzg0MzE0IDAuMzA5ODAzOTIxNiAwLjUyMTU2ODYyNzUAA</bytes>
 						</object>
 						<object class="NSColor" key="IBUINormalTitleShadowColor" id="820765856">
 							<int key="NSColorSpace">3</int>
@@ -78,7 +78,6 @@
 						<string key="NSFrame">{{178, 305}, {122, 60}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -111,7 +110,7 @@
 						<string key="IBUIText">00:00:00.000</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MSAwLjQwMDAwMDAwNiAwLjQwMDAwMDAwNgA</bytes>
+							<bytes key="NSRGB">MSAxIDAAA</bytes>
 						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
@@ -135,11 +134,8 @@
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="928833601"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MC43NQA</bytes>
-					<object class="NSColorSpace" key="NSCustomColorSpace">
-						<int key="NSID">2</int>
-					</object>
+					<int key="NSColorSpace">1</int>
+					<bytes key="NSRGB">MC4yMDAwMDAwMDMgMC4yMDAwMDAwMDMgMC4yMDAwMDAwMDMAA</bytes>
 				</object>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
