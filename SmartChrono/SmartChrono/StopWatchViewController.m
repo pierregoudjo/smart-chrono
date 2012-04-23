@@ -27,7 +27,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [chronoLabel setFont: [UIFont fontWithName:@"Crystal" size:55]]; 
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+
+        [chronoLabel setFont: [UIFont fontWithName:@"Crystal" size:55]];    
+    } 
+    else {
+
+        [chronoLabel setFont: [UIFont fontWithName:@"Crystal" size:116]];    
+    }
+     
 }
 
 - (void)releaseOutlets

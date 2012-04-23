@@ -26,6 +26,8 @@
 		29C52BE2154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C52BE0154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1@2x.png */; };
 		29C52BE615452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C52BE415452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop.png */; };
 		29C52BE715452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C52BE515452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop@2x.png */; };
+		29C52BEA154538FF003BF93A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C52BE8154538FF003BF93A /* Icon.png */; };
+		29C52BEB154538FF003BF93A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C52BE9154538FF003BF93A /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		29C52BE0154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129102-simple-red-square-icon-media-a-media22-arrow-forward1@2x.png"; sourceTree = "<group>"; };
 		29C52BE415452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129108-simple-red-square-icon-media-a-media28-stop.png"; sourceTree = "<group>"; };
 		29C52BE515452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129108-simple-red-square-icon-media-a-media28-stop@2x.png"; sourceTree = "<group>"; };
+		29C52BE8154538FF003BF93A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		29C52BE9154538FF003BF93A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 		2938C0941542DB810027808D = {
 			isa = PBXGroup;
 			children = (
+				29C52BE8154538FF003BF93A /* Icon.png */,
+				29C52BE9154538FF003BF93A /* Icon@2x.png */,
 				29C52BE415452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop.png */,
 				29C52BE515452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop@2x.png */,
 				29C52BDF154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1.png */,
@@ -248,6 +254,8 @@
 				29C52BE2154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1@2x.png in Resources */,
 				29C52BE615452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop.png in Resources */,
 				29C52BE715452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop@2x.png in Resources */,
+				29C52BEA154538FF003BF93A /* Icon.png in Resources */,
+				29C52BEB154538FF003BF93A /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
