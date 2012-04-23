@@ -10,17 +10,32 @@
 
 @interface StopWatchViewController () {
     BOOL isWorking;
+    NSDateFormatter *dateFormatter;
 }
 - (void)releaseOutlets;
+@property(nonatomic, retain) NSDateFormatter *dateFormatter;
 @end
 
 @implementation StopWatchViewController
 
 @synthesize chronoLabel;
 
+@synthesize dateFormatter;
+
+
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"HH:mm:ss.SSS"];
+        [dateFormatter setTimeZone: [NSTimeZone timeZoneForSecondsFromGMT:0.0]];
+    }
+    return self;
+}
 - (void)dealloc
 {
     [self releaseOutlets];
+    [dateFormatter release];
     [super dealloc];
 }
 
@@ -65,12 +80,8 @@
     NSDate *currentDate = [NSDate date];
     NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startDate];
     NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"HH:mm:ss.SSS"];
-    [dateFormatter setTimeZone: [NSTimeZone timeZoneForSecondsFromGMT:0.0]];
     NSString *timeString = [dateFormatter stringFromDate:timerDate];
     chronoLabel.text = timeString;
-    [dateFormatter release];
 }
 
 - (IBAction)onStartPressed:(UIButton *)sender
@@ -88,16 +99,18 @@
                                                      selector:@selector(updateTimer) 
                                                      userInfo:nil 
                                                       repeats:YES];
+        [chronoTimer retain];
     }  
 }
 
 - (IBAction)onStopPressed:(UIButton *)sender
 {
     [chronoTimer invalidate];
-    chronoTimer = nil;
+    [chronoTimer release];
     [self updateTimer];
     [startDate release];
     startDate = nil;
+    chronoTimer = nil;
     isWorking = NO;
     
 }
