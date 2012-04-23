@@ -107,7 +107,6 @@
 {
     [chronoTimer invalidate];
     [chronoTimer release];
-    [self updateTimer];
     [startDate release];
     startDate = nil;
     chronoTimer = nil;
