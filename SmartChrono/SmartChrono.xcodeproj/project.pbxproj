@@ -22,6 +22,10 @@
 		2938C0C71542DB810027808D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2938C0A51542DB810027808D /* Foundation.framework */; };
 		2938C0CF1542DB820027808D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2938C0CD1542DB820027808D /* InfoPlist.strings */; };
 		2938C0D21542DB820027808D /* SmartChronoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2938C0D11542DB820027808D /* SmartChronoTests.m */; };
+		29C52BE1154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C52BDF154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1.png */; };
+		29C52BE2154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C52BE0154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1@2x.png */; };
+		29C52BE615452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C52BE415452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop.png */; };
+		29C52BE715452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C52BE515452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		2938C0CE1542DB820027808D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2938C0D01542DB820027808D /* SmartChronoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartChronoTests.h; sourceTree = "<group>"; };
 		2938C0D11542DB820027808D /* SmartChronoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartChronoTests.m; sourceTree = "<group>"; };
+		29C52BDF154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129102-simple-red-square-icon-media-a-media22-arrow-forward1.png"; sourceTree = "<group>"; };
+		29C52BE0154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129102-simple-red-square-icon-media-a-media22-arrow-forward1@2x.png"; sourceTree = "<group>"; };
+		29C52BE415452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129108-simple-red-square-icon-media-a-media28-stop.png"; sourceTree = "<group>"; };
+		29C52BE515452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129108-simple-red-square-icon-media-a-media28-stop@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,10 @@
 		2938C0941542DB810027808D = {
 			isa = PBXGroup;
 			children = (
+				29C52BE415452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop.png */,
+				29C52BE515452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop@2x.png */,
+				29C52BDF154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1.png */,
+				29C52BE0154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1@2x.png */,
 				2938C0A91542DB810027808D /* SmartChrono */,
 				2938C0CA1542DB810027808D /* SmartChronoTests */,
 				2938C0A21542DB810027808D /* Frameworks */,
@@ -232,6 +244,10 @@
 				2938C0BA1542DB810027808D /* StopWatchViewController_iPhone.xib in Resources */,
 				2938C0BD1542DB810027808D /* StopWatchViewController_iPad.xib in Resources */,
 				290556321542E62C009AA62C /* Crystal.ttf in Resources */,
+				29C52BE1154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1.png in Resources */,
+				29C52BE2154521B1003BF93A /* 129102-simple-red-square-icon-media-a-media22-arrow-forward1@2x.png in Resources */,
+				29C52BE615452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop.png in Resources */,
+				29C52BE715452A85003BF93A /* 129108-simple-red-square-icon-media-a-media28-stop@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
