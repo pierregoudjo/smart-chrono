@@ -72,14 +72,15 @@
                                                    target:self 
                                                  selector:@selector(updateTimer) 
                                                  userInfo:nil 
-                                                  repeats:YES];
-    
+                                                  repeats:YES];    
     
 }
 
 - (IBAction)onStopPressed:(UIButton *)sender
 {
-    chronoLabel.text = @"STOP PRESSED";
+    [chronoTimer invalidate];
+    chronoTimer = nil;
+    [self updateTimer];
 }
 
 @end
