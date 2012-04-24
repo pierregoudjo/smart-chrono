@@ -90,28 +90,25 @@
         startDate = [NSDate date];
         [startDate retain];
         isWorking = YES;
-    }
-    
-    
-    if (!chronoTimer) {
         chronoTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0 
                                                        target:self 
                                                      selector:@selector(updateTimer) 
                                                      userInfo:nil 
                                                       repeats:YES];
         [chronoTimer retain];
-    }  
+    } 
 }
 
 - (IBAction)onStopPressed:(UIButton *)sender
 {
-    [chronoTimer invalidate];
-    [chronoTimer release];
-    [startDate release];
-    startDate = nil;
-    chronoTimer = nil;
-    isWorking = NO;
-    
+    if (isWorking) {
+        [chronoTimer invalidate];
+        [chronoTimer release];
+        [startDate release];
+        startDate = nil;
+        chronoTimer = nil;
+        isWorking = NO;
+    }
 }
 
 @end
