@@ -21,4 +21,7 @@
 - (IBAction)onStartPressed:(UIButton *)sender;
 - (IBAction)onStopPressed:(UIButton *)sender;
 
+- (IBAction)addCheckpoint:(id)sender;
+- (IBAction)resetCheckList:(id)sender;
+
 @end

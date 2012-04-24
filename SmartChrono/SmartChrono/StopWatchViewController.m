@@ -16,6 +16,7 @@
     NSTimeInterval timeInterval;
     NSTimer *chronoTimer;
     NSDate *startDate;
+    NSMutableArray *dataToShow;
 }
 - (void)releaseOutlets;
 @property(nonatomic, retain) NSDateFormatter *dateFormatter;
@@ -44,6 +45,7 @@
 {
     [self releaseOutlets];
     [dateFormatter release];
+    [dataToShow release];
     [super dealloc];
 }
 
@@ -58,6 +60,8 @@
 
         [chronoLabel setFont: [UIFont fontWithName:@"Crystal" size:116]];    
     }
+    dataToShow = [NSMutableArray arrayWithCapacity:10];
+    [dataToShow retain];
      
 }
 
@@ -169,6 +173,50 @@
     else {
         chronoLabel.text = @"00:00:00.000";
     }
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    return 1; // 1
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    return [dataToShow count]; // 2
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier]; // 1
+    if (cell == nil) { // 2
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    cell.textLabel.text = [dataToShow objectAtIndex:indexPath.row]; // 3
+    
+    return cell;
+}
+
+-(void)addCheckpoint:(id)sender
+{
+//    if (!dataToShow) {
+//        dataToShow = [NSMutableArray arrayWithCapacity:10];
+//    }
+    [dataToShow addObject:chronoLabel.text];
+    [checkpointList reloadData];
+}
+
+-(void)resetCheckList:(id)sender
+{
+//    if (!dataToShow) {
+//        dataToShow = [NSMutableArray arrayWithCapacity:10];
+//    }
+    [dataToShow removeAllObjects];
+    [checkpointList reloadData];
 }
 
 @end
