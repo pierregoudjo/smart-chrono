@@ -131,7 +131,7 @@
         [self stopTimer];
         
         //Save the time eleapsed
-        eleapsedTimeAtPause = timeInterval;
+        eleapsedTimeAtPause = timeInterval + eleapsedTimeAtPause;
     }
     else {
         startDate = [NSDate date];
