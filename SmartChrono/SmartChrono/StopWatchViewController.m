@@ -136,7 +136,7 @@
     else {
         startDate = [NSDate date];
         [startDate retain];
-        chronoTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0 
+        chronoTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/1000.0 
                                                        target:self 
                                                      selector:@selector(updateTimer) 
                                                      userInfo:nil 
