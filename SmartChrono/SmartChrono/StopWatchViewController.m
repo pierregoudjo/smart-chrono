@@ -26,6 +26,7 @@
 //Synthetise outlets
 @synthesize chronoLabel;
 @synthesize startButton;
+@synthesize checkpointList;
 
 @synthesize dateFormatter;
 
@@ -64,11 +65,14 @@
 {
     self.chronoLabel = nil;
     self.startButton = nil;
+    self.checkpointList = nil;
 }
 
 - (void)viewDidUnload
 {
     [self releaseOutlets];
+    [checkpointList release];
+    checkpointList = nil;
     [super viewDidUnload];
     
 }

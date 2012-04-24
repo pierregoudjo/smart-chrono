@@ -12,10 +12,12 @@
     @private
     IBOutlet UILabel *chronoLabel;
     IBOutlet UIButton *startButton;
+    IBOutlet UITableView *checkpointList;
 }
 
 @property(nonatomic, retain) IBOutlet UILabel *chronoLabel;
 @property(nonatomic, retain) IBOutlet UIButton *startButton;
+@property(nonatomic, retain) IBOutlet UITableView *checkpointList;
 - (IBAction)onStartPressed:(UIButton *)sender;
 - (IBAction)onStopPressed:(UIButton *)sender;
 
