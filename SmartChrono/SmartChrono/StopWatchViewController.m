@@ -12,6 +12,8 @@
     BOOL isWorking;
     BOOL isPaused;
     NSDateFormatter *dateFormatter;
+    NSTimeInterval eleapsedTimeAtPause;
+    NSTimeInterval timeInterval;
 }
 - (void)releaseOutlets;
 @property(nonatomic, retain) NSDateFormatter *dateFormatter;
@@ -32,6 +34,7 @@
         dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"HH:mm:ss.SSS"];
         [dateFormatter setTimeZone: [NSTimeZone timeZoneForSecondsFromGMT:0.0]];
+        eleapsedTimeAtPause = 0;
     }
     return self;
 }
@@ -81,8 +84,8 @@
 - (void)updateTimer
 {
     NSDate *currentDate = [NSDate date];
-    NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startDate];
-    NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    timeInterval = [currentDate timeIntervalSinceDate:startDate];
+    NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval + eleapsedTimeAtPause];
     NSString *timeString = [dateFormatter stringFromDate:timerDate];
     chronoLabel.text = timeString;
 }
@@ -102,22 +105,39 @@
 
 - (IBAction)onStartPressed:(UIButton *)sender
 {
+    //Check if the stopwatch is already started or not
+    //And init global status values
     if (!isWorking) {
+        isWorking = YES;
+        isPaused = NO;
+    }
+    else {
+        //If stopwatch is started hitting play button switch between play and
+        //pause
+        isPaused = !isPaused;
+    }
+    [self updatePausedStatus];
+    
+    //
+    if (isPaused) {
+        //Stop the chrono
+        [chronoTimer invalidate];
+        [chronoTimer release];
+        chronoTimer = nil;
+        
+        //Save the time eleapsed
+        eleapsedTimeAtPause = timeInterval;
+    }
+    else {
         startDate = [NSDate date];
         [startDate retain];
-        isWorking = YES;
         chronoTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0 
                                                        target:self 
                                                      selector:@selector(updateTimer) 
                                                      userInfo:nil 
                                                       repeats:YES];
         [chronoTimer retain];
-        isPaused = NO;
     }
-    else {
-        isPaused = !isPaused;
-    }
-    [self updatePausedStatus];
 }
 
 - (IBAction)onStopPressed:(UIButton *)sender
@@ -125,11 +145,14 @@
     if (isWorking) {
         [chronoTimer invalidate];
         [chronoTimer release];
+        chronoTimer = nil;
+        
         [startDate release];
         startDate = nil;
-        chronoTimer = nil;
+        
         isWorking = NO;
         isPaused = NO;
+        eleapsedTimeAtPause = 0;
         [startButton setImage:[UIImage imageNamed:@"129102-simple-red-square-icon-media-a-media22-arrow-forward1"]
                      forState:UIControlStateNormal];
         
