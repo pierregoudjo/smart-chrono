@@ -10,6 +10,7 @@
 
 @interface StopWatchViewController () {
     BOOL isWorking;
+    BOOL isPaused;
     NSDateFormatter *dateFormatter;
 }
 - (void)releaseOutlets;
@@ -21,6 +22,8 @@
 @synthesize chronoLabel;
 
 @synthesize dateFormatter;
+
+@synthesize startButton;
 
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -84,6 +87,19 @@
     chronoLabel.text = timeString;
 }
 
+- (void)updatePausedStatus
+{
+    NSLog(@"Paused status: %u", isPaused);
+    if (!isPaused) {
+        [startButton setImage:[UIImage imageNamed:@"129107-simple-red-square-icon-media-a-media27-pause-sign"] 
+                     forState:UIControlStateNormal];
+    }
+    else {
+        [startButton setImage:[UIImage imageNamed:@"129102-simple-red-square-icon-media-a-media22-arrow-forward1"] 
+                     forState:UIControlStateNormal];
+    }
+}
+
 - (IBAction)onStartPressed:(UIButton *)sender
 {
     if (!isWorking) {
@@ -96,7 +112,12 @@
                                                      userInfo:nil 
                                                       repeats:YES];
         [chronoTimer retain];
-    } 
+        isPaused = NO;
+    }
+    else {
+        isPaused = !isPaused;
+    }
+    [self updatePausedStatus];
 }
 
 - (IBAction)onStopPressed:(UIButton *)sender
@@ -108,6 +129,10 @@
         startDate = nil;
         chronoTimer = nil;
         isWorking = NO;
+        isPaused = NO;
+        [startButton setImage:[UIImage imageNamed:@"129102-simple-red-square-icon-media-a-media22-arrow-forward1"]
+                     forState:UIControlStateNormal];
+        
     }
 }
 
