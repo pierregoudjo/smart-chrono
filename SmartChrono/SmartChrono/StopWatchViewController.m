@@ -103,6 +103,14 @@
     }
 }
 
+- (void)stopTimer
+{
+    //Stop the chrono
+    [chronoTimer invalidate];
+    [chronoTimer release];
+    chronoTimer = nil;
+}
+
 - (IBAction)onStartPressed:(UIButton *)sender
 {
     //Check if the stopwatch is already started or not
@@ -120,10 +128,7 @@
     
     //
     if (isPaused) {
-        //Stop the chrono
-        [chronoTimer invalidate];
-        [chronoTimer release];
-        chronoTimer = nil;
+        [self stopTimer];
         
         //Save the time eleapsed
         eleapsedTimeAtPause = timeInterval;
@@ -143,9 +148,7 @@
 - (IBAction)onStopPressed:(UIButton *)sender
 {
     if (isWorking) {
-        [chronoTimer invalidate];
-        [chronoTimer release];
-        chronoTimer = nil;
+        [self stopTimer];
         
         [startDate release];
         startDate = nil;
