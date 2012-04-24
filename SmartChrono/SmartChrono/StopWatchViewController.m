@@ -14,6 +14,8 @@
     NSDateFormatter *dateFormatter;
     NSTimeInterval eleapsedTimeAtPause;
     NSTimeInterval timeInterval;
+    NSTimer *chronoTimer;
+    NSDate *startDate;
 }
 - (void)releaseOutlets;
 @property(nonatomic, retain) NSDateFormatter *dateFormatter;
@@ -21,12 +23,11 @@
 
 @implementation StopWatchViewController
 
+//Synthetise outlets
 @synthesize chronoLabel;
-
-@synthesize dateFormatter;
-
 @synthesize startButton;
 
+@synthesize dateFormatter;
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -62,6 +63,7 @@
 - (void)releaseOutlets
 {
     self.chronoLabel = nil;
+    self.startButton = nil;
 }
 
 - (void)viewDidUnload
@@ -159,6 +161,9 @@
         [startButton setImage:[UIImage imageNamed:@"129102-simple-red-square-icon-media-a-media22-arrow-forward1"]
                      forState:UIControlStateNormal];
         
+    }
+    else {
+        chronoLabel.text = @"00:00:00.000";
     }
 }
 

@@ -12,8 +12,6 @@
     @private
     IBOutlet UILabel *chronoLabel;
     IBOutlet UIButton *startButton;
-    NSTimer *chronoTimer;
-    NSDate *startDate;
 }
 
 @property(nonatomic, retain) IBOutlet UILabel *chronoLabel;
