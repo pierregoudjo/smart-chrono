@@ -32,6 +32,10 @@
 		29C52BEF154539CB003BF93A /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C52BED154539CB003BF93A /* Icon-72@2x.png */; };
 		29C52BF215463A50003BF93A /* 129107-simple-red-square-icon-media-a-media27-pause-sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C52BF015463A4F003BF93A /* 129107-simple-red-square-icon-media-a-media27-pause-sign.png */; };
 		29C52BF315463A50003BF93A /* 129107-simple-red-square-icon-media-a-media27-pause-sign@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C52BF115463A4F003BF93A /* 129107-simple-red-square-icon-media-a-media27-pause-sign@2x.png */; };
+		29F73C2815469059009BF331 /* 129110-simple-red-square-icon-media-a-media291-volume1.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F73C2615469059009BF331 /* 129110-simple-red-square-icon-media-a-media291-volume1.png */; };
+		29F73C2915469059009BF331 /* 129110-simple-red-square-icon-media-a-media291-volume1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F73C2715469059009BF331 /* 129110-simple-red-square-icon-media-a-media291-volume1@2x.png */; };
+		29F73C2D1546950B009BF331 /* 116757-matte-blue-and-white-square-icon-arrows-arrow-redo.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F73C2B1546950B009BF331 /* 116757-matte-blue-and-white-square-icon-arrows-arrow-redo.png */; };
+		29F73C2E1546950B009BF331 /* 116757-matte-blue-and-white-square-icon-arrows-arrow-redo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29F73C2C1546950B009BF331 /* 116757-matte-blue-and-white-square-icon-arrows-arrow-redo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,10 @@
 		29C52BED154539CB003BF93A /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "../Icon-72@2x.png"; sourceTree = "<group>"; };
 		29C52BF015463A4F003BF93A /* 129107-simple-red-square-icon-media-a-media27-pause-sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129107-simple-red-square-icon-media-a-media27-pause-sign.png"; sourceTree = "<group>"; };
 		29C52BF115463A4F003BF93A /* 129107-simple-red-square-icon-media-a-media27-pause-sign@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129107-simple-red-square-icon-media-a-media27-pause-sign@2x.png"; sourceTree = "<group>"; };
+		29F73C2615469059009BF331 /* 129110-simple-red-square-icon-media-a-media291-volume1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129110-simple-red-square-icon-media-a-media291-volume1.png"; sourceTree = "<group>"; };
+		29F73C2715469059009BF331 /* 129110-simple-red-square-icon-media-a-media291-volume1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "129110-simple-red-square-icon-media-a-media291-volume1@2x.png"; sourceTree = "<group>"; };
+		29F73C2B1546950B009BF331 /* 116757-matte-blue-and-white-square-icon-arrows-arrow-redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "116757-matte-blue-and-white-square-icon-arrows-arrow-redo.png"; sourceTree = "<group>"; };
+		29F73C2C1546950B009BF331 /* 116757-matte-blue-and-white-square-icon-arrows-arrow-redo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "116757-matte-blue-and-white-square-icon-arrows-arrow-redo@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,10 @@
 		2938C0AA1542DB810027808D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				29F73C2615469059009BF331 /* 129110-simple-red-square-icon-media-a-media291-volume1.png */,
+				29F73C2715469059009BF331 /* 129110-simple-red-square-icon-media-a-media291-volume1@2x.png */,
+				29F73C2B1546950B009BF331 /* 116757-matte-blue-and-white-square-icon-arrows-arrow-redo.png */,
+				29F73C2C1546950B009BF331 /* 116757-matte-blue-and-white-square-icon-arrows-arrow-redo@2x.png */,
 				29C52BEC154539CB003BF93A /* Icon-72.png */,
 				29C52BED154539CB003BF93A /* Icon-72@2x.png */,
 				29C52BE8154538FF003BF93A /* Icon.png */,
@@ -272,6 +284,10 @@
 				29C52BEF154539CB003BF93A /* Icon-72@2x.png in Resources */,
 				29C52BF215463A50003BF93A /* 129107-simple-red-square-icon-media-a-media27-pause-sign.png in Resources */,
 				29C52BF315463A50003BF93A /* 129107-simple-red-square-icon-media-a-media27-pause-sign@2x.png in Resources */,
+				29F73C2815469059009BF331 /* 129110-simple-red-square-icon-media-a-media291-volume1.png in Resources */,
+				29F73C2915469059009BF331 /* 129110-simple-red-square-icon-media-a-media291-volume1@2x.png in Resources */,
+				29F73C2D1546950B009BF331 /* 116757-matte-blue-and-white-square-icon-arrows-arrow-redo.png in Resources */,
+				29F73C2E1546950B009BF331 /* 116757-matte-blue-and-white-square-icon-arrows-arrow-redo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
