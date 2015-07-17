@@ -1,4 +1,4 @@
 SmartChrono
 ============
 
-A simple stopwatch for Iphone.
+A simple stopwatch for Ipho
